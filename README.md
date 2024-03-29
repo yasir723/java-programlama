@@ -37,7 +37,7 @@ Random rand = new Random();
 int randomNumber = rand.nextInt((MAX - MIN) + 1) + MIN;
 ```
 
-ona ait önemli metotlar
+**Önemli metotlar**
 ```java
 int randomNumber = rand.nextInt(100); // 0 ile 99 arasında rastgele bir tamsayı üretir
 double randomDouble = rand.nextDouble(); // 0.0 ile 1.0 arasında rastgele bir ondalıklı sayı üretir
@@ -63,7 +63,7 @@ public static void main(String[] args) {
 }
 ```
 
-ona ait önemli metotlar
+**Önemli metotlar**
 ```java
 int number = scan.nextInt(); // Klavyeden bir tamsayı girdisi okur
 double decimal = scan.nextDouble(); // Klavyeden bir ondalıklı sayı girdisi okur
