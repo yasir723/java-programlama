@@ -15,9 +15,11 @@ public static void main(String[] args) {
 }
 ```
 
-sabit bir sayı ile kullanımı
+**sabit bir sayı ile kullanımı**
 
-`0 ile 10` arasında seçim yapmak için
+
+
+- `0 ile 10` arasında seçim yapmak için
 ```java
 public static void main(String[] args) {
   final int MAX = 10;
@@ -25,7 +27,7 @@ public static void main(String[] args) {
   int num = rand.nextInt(MAX) + 1;
 }
 ```
-`5 ile 15` arasında seçim yapmak için
+- `5 ile 15` arasında seçim yapmak için
 
 ```java
 final int MAX = 15;
