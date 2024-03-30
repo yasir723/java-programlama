@@ -100,14 +100,7 @@ public static void main(String[] args) {
 ## 4. `DecimalFormat` Sınıfı
 Java'da sayıların biçimlendirilmesi için kullanılan bir sınıftır. Bu sınıf, sayıların biçimlendirilmesi ve yerel ayarlar göz önünde bulundurularak uygun biçimde görüntülenmesi için çeşitli yöntemler sağlar. Örneğin, sayıların virgül ile ayrılması, ondalık kısmın görüntülenmesi, binlik ayırıcının kullanılması gibi özellikler bu sınıf tarafından sağlanır.
 
-Türk standartlarına uygun bir biçimlendirme için şu kod kullanır
 
-```java
-import java.util.Locale;
-public static void main(String[] args) {
-  NumberFormat.getCurrencyInstance(Locale.forLanguageTag("tr-TR"));
-}
-```
 
 `main` metodunda kullanımı, yüzde değerlerini biçimlendirmek için NumberFormat sınıfının bir örneğini döndürür, bunun için `getPercentInstance` metodu kullanılır.
 
@@ -117,6 +110,12 @@ public static void main(String[] args) {
   NumberFormat nf = NumberFormat.getPercentInstance();
   System.out.println(nf.format(ratio)); // output: 75%
 }
+```
+
+belirli bir biçimlendirme için şu kütüphane eklenmeli
+
+```java
+import java.util.Locale;
 ```
 
 `Türk` standartlarına göre para birimi biçimlendirme
