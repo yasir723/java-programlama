@@ -194,4 +194,35 @@ public static void main(String[] args) {
 }
 ```
 
+**Önemli metotlar**
+```java
+// Metin dosyasından okuma ve yazma işlemleri için kullanılan sınıflar
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+// Dosya işlemleri için temel sınıf
+import java.io.File;
+
+// Bayt tabanlı giriş ve çıkış işlemleri için temel soyut sınıflar
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+// Karakter tabanlı giriş ve çıkış işlemleri için temel soyut sınıflar
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+// Yazdırma işlemleri için sınıf
+import java.io.PrintWriter;
+
+// Nesnelerin serileştirilmesi için arayüz
+import java.io.Serializable;
+
+// IO işlemlerinde oluşabilecek istisnalar için sınıf
+import java.io.IOException;
+
+```
 
