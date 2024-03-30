@@ -105,7 +105,7 @@ Türk standartlarına uygun bir biçimlendirme için şu kod kullanır
 ```java
 import java.util.Locale;
 public static void main(String[] args) {
-  NumberFormat.getInstance(Locale.forLanguageTag("tr-TR"))
+  NumberFormat.getCurrencyInstance(Locale.forLanguageTag("tr-TR"));
 }
 ```
 
@@ -133,6 +133,7 @@ public static void main(String[] args) {
 }
 ```
 
+---
 
 
 
