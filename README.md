@@ -97,10 +97,13 @@ public static void main(String[] args) {
 
 ---
 
-## 4. `DecimalFormat` Sınıfı
+## 4. `NumberFormat` Sınıfı
 Java'da sayıların biçimlendirilmesi için kullanılan bir sınıftır. Bu sınıf, sayıların biçimlendirilmesi ve yerel ayarlar göz önünde bulundurularak uygun biçimde görüntülenmesi için çeşitli yöntemler sağlar. Örneğin, sayıların virgül ile ayrılması, ondalık kısmın görüntülenmesi, binlik ayırıcının kullanılması gibi özellikler bu sınıf tarafından sağlanır.
 
-
+Kütüphanesini eklemek için şu kodu kullanabilirsiniz:
+```java
+import java.text.NumberFormat;
+```
 
 `main` metodunda kullanımı, yüzde değerlerini biçimlendirmek için NumberFormat sınıfının bir örneğini döndürür, bunun için `getPercentInstance` metodu kullanılır.
 
@@ -133,9 +136,62 @@ public static void main(String[] args) {
 ```
 
 ---
+## 5. `IO` Sınıfı
+Java'da IO (Input/Output) sınıfı, giriş/çıkış işlemlerini yönetmek için kullanılan bir sınıf kümesini ifade eder. Java'da IO sınıfı, veri akışlarını işlemek, `dosyalardan okuma/yazma yapmak`, ağ üzerinden veri iletişimi gerçekleştirmek gibi çeşitli giriş/çıkış işlemlerini kolaylaştırır.
+
+Kütüphanesini eklemek için şu kodu kullanabilirsiniz:
+```java
+java.io.*;
+```
+`* işareti`, bu sınıfa ait tüm metotları tanımlamak anlamına gelmektedir.
+
+Java dilinde `throws IOException` ifadesi, bir metodunun hata durumlarını belirtmek için kullanılır. Bu ifade, bir metodun içinde `IOException` adlı bir istisna (exception) fırlatılabileceğini gösterir. IOException, giriş/çıkış işlemleri sırasında ortaya çıkabilecek bir hata türüdür. Bu hata, dosya okuma/yazma işlemlerinde dosyanın bulunamaması, erişim izinlerinin olmaması gibi durumlarda ortaya çıkabilir.
 
 
+Metodun kullanımı, metod imzasının hemen yanında yer alır.
+```java
+public static void URLDissector() throws IOException{
+}
+```
 
+bir dosya okuma örneği:
+Eğer java.IO sınıfa ait olan tüm metotları çağırmak istemezsek, sadece gerekli metodlar çağırmak istersek dosya okumak için bu şekilde yazbiliriz
 
+gerekli tanımlamalar:
+```java
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+```
+
+`main` metodunda kullanımı, dosya.txt adlı bir dosyayı okumak için FileReader kullanılır
+
+```java
+public static void main(String[] args) {
+  try {
+          // Okunacak dosyanın yolunu belirtin
+          String dosyaYolu = "dosya.txt";
+    
+          // FileReader ile dosyayı oku
+          FileReader fileReader = new FileReader(dosyaYolu);
+    
+          // BufferedReader ile FileReader'ı kullanarak dosyayı satır satır oku
+          BufferedReader bufferedReader = new BufferedReader(fileReader);
+    
+          // Dosyadan okunan satırı tutacak değişken
+          String satir;
+    
+          // Dosya sonuna kadar oku ve her satırı konsola yazdır
+          while ((satir = bufferedReader.readLine()) != null) {
+            System.out.println(satir);
+          }
+    
+          // Kullanılan kaynakları serbest bırak
+          ufferedReader.close();
+   } catch (IOException e) {
+          ystem.out.println("Dosya okuma hatası: " + e.getMessage());
+   }
+}
+```
 
 
