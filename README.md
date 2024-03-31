@@ -226,3 +226,46 @@ import java.io.IOException;
 
 ```
 
+---
+## 6. `ArrayList ` Sınıfı
+- Bir ArrayList nesnesi, ihtiyaç duyulduğunda büyür ve küçülür, gerektiğinde kapasitesini ayarlar.
+- ArrayList'in index değerleri 0'dan başlar.
+- Ekleme ve silme işlemlerine göre indexler ayarlanır.
+
+Kütüphanesini eklemek için şu kodu kullanabilirsiniz:
+```java
+import java.util.ArrayList;
+```
+Listede depolanan nesnenin türü, ArrayList nesnesi oluşturulurken belirlenir:
+```java
+ArrayList<String> names = new ArrayList<String>();
+ArrayList<int> numbers = new ArrayList<int>();
+ArrayList<Book> books = new ArrayList<Book>();
+ArrayList<ogrenci> ogrenciler = new ArrayList<ogrenci>();
+```
+
+**Önemli metotlar**
+```java
+
+// ArrayList oluşturma
+ArrayList<String> myList = new ArrayList<String>();
+
+// boolean add(E obj): Belirtilen öğeyi listenin sonuna ekler.
+boolean added = myList.add("Bashful");
+
+// void add(int index, E obj): Belirtilen konuma belirtilen öğeyi ekler.
+myList.add(1, "Sleepy");
+
+// Object remove(int index): Belirtilen konumda bulunan öğeyi listeden kaldırır.
+Object removed = myList.remove(0);
+
+// Object get(int index): Belirtilen konumdaki öğeyi döndürür.
+Object element = myList.get(0);
+
+// boolean isEmpty(): Liste boş mu diye kontrol eder.
+boolean empty = myList.isEmpty();
+
+// int size(): Listenin boyutunu döndürür.
+int size = myList.size();
+
+```
