@@ -243,7 +243,7 @@ ArrayList<int> numbers = new ArrayList<int>();
 ArrayList<Book> books = new ArrayList<Book>();
 ArrayList<ogrenci> ogrenciler = new ArrayList<ogrenci>();
 ```
-`Örnek`: Bir grup üyeleri listesini ArrayList içinde saklayan ve güncelleyen bir program:
+`Örnek:` Bir grup üyeleri listesini ArrayList içinde saklayan ve güncelleyen bir program:
 
 ```java
 public static void main (String[] args)
