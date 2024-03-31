@@ -227,7 +227,7 @@ import java.io.IOException;
 ```
 
 ---
-## 6. `ArrayList ` Sınıfı
+## 6. `ArrayList` Sınıfı
 - Bir ArrayList nesnesi, ihtiyaç duyulduğunda büyür ve küçülür, gerektiğinde kapasitesini ayarlar.
 - ArrayList'in index değerleri 0'dan başlar.
 - Ekleme ve silme işlemlerine göre indexler ayarlanır.
@@ -249,21 +249,21 @@ ArrayList<ogrenci> ogrenciler = new ArrayList<ogrenci>();
 public static void main (String[] args)
 {
   ArrayList<String> band = new ArrayList<String>();
-  band.add ("Paul");
-  band.add ("Pete");
-  band.add ("John");
-  band.add ("George");
-  System.out.println (band);
-  int location = band.indexOf ("Pete");
+  band.add("Paul");
+  band.add("Pete");
+  band.add("John");
+  band.add("George");
+  System.out.println(band);
+  int location = band.indexOf("Pete");
   band.remove (location);
-  System.out.println (band);
-  System.out.println ("At index 1: " + band.get(1));
-  band.add (2, "Ringo");
-  System.out.println ("Size of the band: " + band.size());
+  System.out.println(band);
+  System.out.println("At index 1: " + band.get(1));
+  band.add(2, "Ringo");
+  System.out.println("Size of the band: " + band.size());
   int index = 0;
   while (index < band.size())
   {
-    System.out.println (band.get(index));
+    System.out.println(band.get(index));
     index++;
   }
 }
