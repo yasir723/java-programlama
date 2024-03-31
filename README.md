@@ -194,11 +194,61 @@ public static void main(String[] args) {
 }
 ```
 
-`useDelimiter` metodun kullanımı:
+**`useDelimiter`** metodu, bir Scanner nesnesinin girdi dizesini parçalamak için kullanılan bir deseni belirtmenizi sağlar. Yani, girdi dizesini belirli bir desene göre böler ve parçalara ayırır. Bu desen, bir karakter veya karakter dizisi olabilir.
+Örneğin, bir metin dosyasındaki her satırı okurken, her satırı boşluk karakterine göre parçalamak istiyorsanız, useDelimiter metodunu boşluk karakteriyle çağırabilirsiniz:
 
 ```java
-
+Scanner scanner = new Scanner(dosya);
+scanner.useDelimiter(" ");
 ```
+Bu durumda, her çağrıda next() veya nextLine() metodu, bir sonraki boşluk karakterine kadar olan kısmı döndürecektir. Bu şekilde, girdi dizesini istediğiniz şekilde parçalayabilir ve işleyebilirsiniz.
+
+`useDelimiter` için bir örnek:
+
+dosya.txt:
+```txt
+Java,Python,C++,JavaScript
+HTML,CSS,JavaScript,TypeScript
+C#,Java,Python,Ruby
+```
+`main` metodu:
+```java
+public static void main(String[] args) {
+  try {
+    String dosyaYolu = "dosya.txt";
+
+    File dosya = new File(dosyaYolu);
+    Scanner scanner = new Scanner(dosya);
+    scanner.useDelimiter(",");
+
+    while (scanner.hasNext()) {
+      String token = scanner.next();
+      System.out.println(token);
+    }
+
+    scanner.close();
+    } catch (FileNotFoundException e) {
+      System.out.println("Dosya bulunamadı: " + e.getMessage());
+    }
+}
+```
+Output:
+```
+Java
+Python
+C++
+JavaScript
+HTML
+CSS
+JavaScript
+TypeScript
+C#
+Java
+Python
+Ruby
+```
+Dosya 3 satırdan oluşuyor ve her bir dil virgülle ayrılmış olarak yazılmış. Ancak çıktıda her bir satır hem satır başı karakterine hem de virgüle göre ayrılmış. UseDelimiter kullanılmasaydı, 3 satır olarak yazdırılacaktı.
+
 **Önemli metotlar**
 ```java
 // Metin dosyasından okuma ve yazma işlemleri için kullanılan sınıflar
