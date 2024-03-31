@@ -194,6 +194,11 @@ public static void main(String[] args) {
 }
 ```
 
+`useDelimiter` metodun kullanımı:
+
+```java
+
+```
 **Önemli metotlar**
 ```java
 // Metin dosyasından okuma ve yazma işlemleri için kullanılan sınıflar
