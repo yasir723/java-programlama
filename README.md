@@ -365,23 +365,24 @@ kütüphaneyi eklemek bu şekilde:
 import javax.swing.JOptionPane;
 ```
 
-**Önemlii metotlar**
-1. showInputDialog: Belirtilen mesajı içeren bir giriş kutusu gösterir ve kullanıcıdan bir metin girmesini bekler. Kullanıcının girdiği metin geri döndürülür.
+**Önemli metotlar**
+
+`1. showInputDialog:` Belirtilen mesajı içeren bir giriş kutusu gösterir ve kullanıcıdan bir metin girmesini bekler. Kullanıcının girdiği metin geri döndürülür.
 ```java
 static String showInputDialog(Object message) {
 }
 ```
-2. showMessageDialog: Belirtilen bileşenin altında bir iletişim kutusu görüntüler. Kullanıcıya bir mesaj göstermek için kullanılır.
+`2. showMessageDialog:` Belirtilen bileşenin altında bir iletişim kutusu görüntüler. Kullanıcıya bir mesaj göstermek için kullanılır.
 ```java
 static void showMessageDialog(Component parent, Object message) {
 }
 ```
-3. showConfirmDialog: Belirtilen bileşenin altında bir onay kutusu görüntüler. Kullanıcıdan bir onay almak için kullanılır.
+`3. showConfirmDialog:` Belirtilen bileşenin altında bir onay kutusu görüntüler. Kullanıcıdan bir onay almak için kullanılır.
 ```java
 static int showConfirmDialog(Component parent, Object message) {
 }
 ```
-4. showOptionDialog: Belirtilen bileşenin altında bir seçenek kutusu görüntüler. Kullanıcıdan bir seçenek seçmesini bekler.
+`4. showOptionDialog:` Belirtilen bileşenin altında bir seçenek kutusu görüntüler. Kullanıcıdan bir seçenek seçmesini bekler.
 ```java
 static int showOptionDialog(Component parent, Object message, String title, int optionType, int messageType, Icon icon, Object[] options, Object initialValue) {
 }
