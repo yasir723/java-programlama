@@ -1,4 +1,4 @@
-package vizeHazirla;
+package github;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.*;
 
-public class ComparingString {
+public class ozet {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
