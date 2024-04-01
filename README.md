@@ -194,7 +194,8 @@ public static void main(String[] args) {
 }
 ```
 
-**`useDelimiter`** metodu, bir Scanner nesnesinin girdi dizesini parçalamak için kullanılan bir deseni belirtmenizi sağlar. Yani, girdi dizesini belirli bir desene göre böler ve parçalara ayırır. Bu desen, bir karakter veya karakter dizisi olabilir.
+### **`useDelimiter`** metodu:
+bir Scanner nesnesinin girdi dizesini parçalamak için kullanılan bir deseni belirtmenizi sağlar. Yani, girdi dizesini belirli bir desene göre böler ve parçalara ayırır. Bu desen, bir karakter veya karakter dizisi olabilir.
 Örneğin, bir metin dosyasındaki her satırı okurken, her satırı boşluk karakterine göre parçalamak istiyorsanız, useDelimiter metodunu boşluk karakteriyle çağırabilirsiniz:
 
 ```java
@@ -351,12 +352,40 @@ int size = myList.size();
 ```
 
 ---
-## 6. `swing` Sınıfı
+## 6. `swing` Kütüphanesi
 Java programlama dilinde GUI (Graphical User Interface - Grafiksel Kullanıcı Arayüzü) bileşenlerini oluşturmak için kullanılan bir kütüphanedir. Java'nın standart sınıf kitaplığının bir parçasıdır ve Java'nın platform bağımsız yapısıyla uyumlu olarak çalışır. Swing, pencere, düğme, metin kutusu gibi GUI bileşenlerini oluşturmanın yanı sıra, kullanıcı etkileşimine yönelik olayları işlemek ve farklı temalarda ve stillerde GUI'ler oluşturmak için birçok araç sağlar.
 
+### **`JOptionPane`** sınıfı:
+Java Swing kütüphanesinde bulunan ve temel iletişim kutuları oluşturmayı ve kullanmayı kolaylaştıran bir sınıftır. JOptionPane sınıfı, kullanıcıya bilgi iletmek, bir eylemi onaylamak veya kullanıcıdan bilgi almak gibi çeşitli amaçlarla kullanılabilir. Basit bir arayüze sahiptir ve kullanıcı dostu iletişim kutuları oluşturmak için kullanılabilir.
 
+JOptionPane ile oluşturulan iletişim kutuları, metin içeriği, simgeler, düğmeler ve giriş alanları gibi çeşitli öğeler içerebilir. Kullanıcıya belirli bir mesajı iletmek veya belirli bir eylemi gerçekleştirmesini istemek için kullanılabilirler.
 
+kütüphaneyi eklemek bu şekilde:
+```java
+import javax.swing.JOptionPane;
+```
 
+**Önemlii metotlar**
+1. showInputDialog: Belirtilen mesajı içeren bir giriş kutusu gösterir ve kullanıcıdan bir metin girmesini bekler. Kullanıcının girdiği metin geri döndürülür.
+```java
+static String showInputDialog(Object message) {
+}
+```
+2. showMessageDialog: Belirtilen bileşenin altında bir iletişim kutusu görüntüler. Kullanıcıya bir mesaj göstermek için kullanılır.
+```java
+static void showMessageDialog(Component parent, Object message) {
+}
+```
+3. showConfirmDialog: Belirtilen bileşenin altında bir onay kutusu görüntüler. Kullanıcıdan bir onay almak için kullanılır.
+```java
+static int showConfirmDialog(Component parent, Object message) {
+}
+```
+4. showOptionDialog: Belirtilen bileşenin altında bir seçenek kutusu görüntüler. Kullanıcıdan bir seçenek seçmesini bekler.
+```java
+static int showOptionDialog(Component parent, Object message, String title, int optionType, int messageType, Icon icon, Object[] options, Object initialValue) {
+}
+```
 
 
 
