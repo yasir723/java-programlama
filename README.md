@@ -376,6 +376,24 @@ Properties -> Java Compiler -> Finally set the Compiler compliance level to 1.5 
 Uyguladıktan sonra yine hata alıyorsanız projenizi `Rebuild` etmeyi deneyin.
 
 
+`main` metodu: Kullanıcıdan bir sayı alarak, girilen sayının çift mi yoksa tek mi olduğunu kontrol eden ve sonucu kullanıcıya bildiren bir program
+```java
+public static void main(String[] args) {
+  String numStr, result;
+  int num, again;
+    
+  do {
+    numStr = JOptionPane.showInputDialog("Enter an integer");
+    num = Integer.parseInt(numStr);
+      
+    result = "That number is " + ((num % 2 == 0) ? "even" : "odd");
+      
+    JOptionPane.showMessageDialog(null, result);
+    again = JOptionPane.showConfirmDialog(null, "Do Another?");
+  } while (again == JOptionPane.YES_OPTION);
+}
+```
+
 **Önemli metotlar**
 
 `1. showInputDialog:` Belirtilen mesajı içeren bir giriş kutusu gösterir ve kullanıcıdan bir metin girmesini bekler. Kullanıcının girdiği metin geri döndürülür.
