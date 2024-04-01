@@ -365,6 +365,17 @@ kütüphaneyi eklemek bu şekilde:
 import javax.swing.JOptionPane;
 ```
 
+kütüphaneyi eklerken `The package javax.swing is not accessible` veya `The type import javax.swing.JOptionPane is not accessible` gibi hatalar çıkarsa çözümü bu şekilde olur:
+```txt
+Properties -> Java Build Path -> Libraries -> Modulepath -> Add Libraries... -> JRE System Library -> Next -> Execution environment: -> CDC-1.0/Foundation-1.0 (jdk-17.0.2) -> Finish -> Apply -> Apply and Close
+```
+Bu şekilde hata çözülmüş olur ve kütüphaneyi ekleyebilirsiniz, ancak bu adımları uyguladıktan sonra halihazır kodunuzda `Syntax error, varargs are only available if source level is 1.5 or greater` gibi hatasını alırsanız çözümü bu şekilde:
+```txt
+Properties -> Java Compiler -> Finally set the Compiler compliance level to 1.5 or more
+```
+Uyguladıktan sonra yine hata alıyorsanız projenizi `Rebuild` etmeyi deneyin.
+
+
 **Önemli metotlar**
 
 `1. showInputDialog:` Belirtilen mesajı içeren bir giriş kutusu gösterir ve kullanıcıdan bir metin girmesini bekler. Kullanıcının girdiği metin geri döndürülür.
