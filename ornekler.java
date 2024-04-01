@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.*;
 
-public class ozet {
+public class ornekler {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
