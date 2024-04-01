@@ -460,6 +460,21 @@ public class ornekler {
 
 	}
 
+	public static void polindormeBenim() {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("kontrol etmek istediğin cümleyi gir: ");
+		String st = scan.nextLine();
+
+		int length = st.length(), p = 0;
+		for (int i = 0; i < length / 2; i++) {
+			if (st.charAt(i) != st.charAt(length - i - 1)) {
+				p = 1;
+				break;
+			}
+		}
+		System.out.println(p == 0 ? "polindrom" : "değil");
+	}
+
 	public static void polindormeHoca() {
 
 		String word, reverse = "";
@@ -475,21 +490,6 @@ public class ornekler {
 		System.out.println(
 				word.equals(reverse) ? "Girdiğiniz Cümle Polindormedur" : "Girdiğiniz Cümle Polindorme Değildir");
 
-	}
-
-	public static void polindormeBenim() {
-		Scanner scan = new Scanner(System.in);
-		System.out.print("kontrol etmek istediğin cümleyi gir: ");
-		String st = scan.nextLine();
-
-		int length = st.length(), p = 0;
-		for (int i = 0; i < length / 2; i++) {
-			if (st.charAt(i) != st.charAt(length - i - 1)) {
-				p = 1;
-				break;
-			}
-		}
-		System.out.println(p == 0 ? "polindrom" : "değil");
 	}
 
 	public static void polindromeKitap() {
