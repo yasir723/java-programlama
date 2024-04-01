@@ -1,4 +1,5 @@
 # Java Programlama 2023-2024 bahar dönemi
+**Burada bahsedilen tüm sınıfların ve daha fazlasının ilgili örnek kodları yukarıdaki yüklediğim `ComparingString.java` dosyasında bulunmaktadır.**
 
 ## 1. `Random` Sınıfı
 Java'da rastgele sayılar üretmek için kullanılan bir sınıftır. Bu sınıf, genellikle oyunlar, simülasyonlar, rastgele seçimler ve diğer birçok uygulama için rastgele sayılara ihtiyaç duyulan durumlarda kullanılır.
