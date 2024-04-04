@@ -1,4 +1,4 @@
-package vizeHazirla;
+package github;
 
 import java.io.*;
 import java.util.Scanner;
