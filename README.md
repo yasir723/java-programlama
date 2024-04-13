@@ -434,9 +434,22 @@ String st = new String("Java is programming language");
 ```
 
 **Önemli metotlar**
-
+1. `new` method: yeni obje üretmek için kullanılır.
 ```java
-
+public static void main (String[] args)
+{
+  String takim1 = new String("Galatasaray");
+  String takim2 = new String(takim);
+}
+```
+2. `charAt` method: bir karaktere ulaşmak için kullanılır. index'i integer olarak parametre alır.
+```java
+public static void main (String[] args)
+{
+  String takim = new String("Galatasaray");
+  char c = takim.charAt(6);
+  System.out.println(c); // Output: s
+}
 ```
 
 
