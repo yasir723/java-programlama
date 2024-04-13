@@ -439,7 +439,7 @@ String st = new String("Sarı Kırmızı, Ateş ve Aslan");
 public static void main (String[] args)
 {
   String takim1 = new String("Galatasaray");
-  String takim2 = new String(takim);
+  String takim2 = new String(takim1);
 }
 ```
 * __`charAt` method:__ bir karaktere ulaşmak için kullanılır. index'i integer olarak parametre alır.
