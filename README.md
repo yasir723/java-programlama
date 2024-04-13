@@ -455,11 +455,13 @@ public static void main (String[] args)
 * __`compareTo` method:__ bir nesneyi diğerine göre sıralamak için kullanılır.
 
 Java karakter verisi Unicode karakter kümesine dayanır. Unicode, her karakter için belirli bir sayısal değer belirler ve bu nedenle bir sıralama sağlar. Bu sıralamaya dayanarak karakter verileri üzerinde ilişkisel operatörler kullanabiliriz
-| karaktter | Unicode| 
-| --------- | -------| 
-| 0 - 9    | 48 - 57| 
-| A - Z    | 65 - 90| 
-| a - z    | 97 - 122| 
+| karakter | Unicode | 
+| --------- | ------- | 
+| 0 - 9     | 48 - 57 |  
+| A - Z     | 65 - 90 | 
+| a - z     | 97 - 122| 
+
+Yukarıdaki tabloya göre bu sonuçları elde edebiliriz
 
 ```java
 public static void main (String[] args)
