@@ -420,7 +420,10 @@ static int showOptionDialog(Component parent, Object message, String title, int 
 
 ---
 ## 7. `String` Sınıfı
-- String bir değişken değildir, bir objedir
+- String bir değişken değildir, bir `objedir`
+- `for` döngüsü içinde String'e ekleme işlemi yapmak, `çok maliyetli` bir yaklaşımdır.
+- Bir String'in değeri çift tırnak içinde belirtilir: ` " `.
+- Karakter (char) değişkenleri için tek tırnak içinde belirtilir: ` ' ` ve Stringler için kullanılmaz.
 #### İki şekilde tanımlanabilir:
 ```java
 String st = "Java is programming language";
