@@ -486,3 +486,16 @@ int r;
   r = takim1.compareTo(takim2); // Pozitif bir değer döndürür		
 }
 ```
+
+* __`concat` method:__ iki stringi birleştirmek için kullanılır.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "Galata";
+  String takim2 = "saray";
+	
+  String takim = takim1.concat(takim2);
+  System.out.println(takim); // Output: Galatasaray
+}
+```
+
