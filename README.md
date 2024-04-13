@@ -557,10 +557,22 @@ public static void main (String[] args)
 ```java
 public static void main (String[] args)
 {
-  String takim1 = "Galatasaray"; 
+  String takim = "Galatasaray"; 
   
-  String subTakim = takim1.substring(3, 6); // 3 dahil, 6 dahil değil
+  String subTakim = takim.substring(3, 6); // 3 dahil, 6 dahil değil
   
   System.out.println(subTakim); // Output: ata
+}
+```
+
+* __`toLowerCase` method:__ bir String'in tüm harflerini küçük harfe dönüştürür.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "GalataSaray"; // G ve S büyük harfler
+  
+  String takim2 = takim1.toLowerCase();
+  
+  System.out.println(takim2); // Output: galatasaray
 }
 ```
