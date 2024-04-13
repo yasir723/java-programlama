@@ -525,3 +525,29 @@ public static void main (String[] args)
   System.out.println(b2); // Output: true
 }
 ```
+
+* __`length` method:__  bir String'in uzunluğunu döndürür.
+```java
+public static void main (String[] args)
+{
+  String takim = "Galatasaray"; 
+  
+  int length = takim.length();
+  System.out.println(length); // Output: 11
+}
+```
+
+
+* __`replace` method:__ bir String içinde belirtilen bir karakteri başka bir karakterle değiştirmek için kullanılır.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "galatasaray"; 
+		
+  String takim2 = takim1.replace('g', 'G');
+  System.out.println(takim2); // Output: Galatasaray
+  
+  String takim3 = takim1.replace('a','A');
+  System.out.println(takim3); // Output: gAlAtAsArAy
+}
+```
