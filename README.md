@@ -426,11 +426,11 @@ static int showOptionDialog(Component parent, Object message, String title, int 
 - Karakter (char) değişkenleri için tek tırnak içinde belirtilir: ` ' ` ve Stringler için kullanılmaz.
 #### İki şekilde tanımlanabilir:
 ```java
-String st = "Java is programming language";
+String st = "Sarı-Kırmızı, Ateş-Aslan";
 ```
 
 ```java
-String st = new String("Java is programming language");
+String st = new String("Sarı-Kırmızı, Ateş-Aslan");
 ```
 
 **Önemli metotlar**
