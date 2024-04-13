@@ -433,6 +433,11 @@ String st = "Java is programming language";
 String st = new String("Java is programming language");
 ```
 
+**Önemli metotlar**
+
+```java
+
+```
 
 
 
