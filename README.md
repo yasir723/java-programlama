@@ -499,3 +499,29 @@ public static void main (String[] args)
 }
 ```
 
+* __`equals` method:__  iki nesnenin aynı olup olmadığını kontrol eder.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "Galatasaray";
+  String takim2 = "Galatasaray";
+  
+  boolean b = takim1.equals(takim2);
+  System.out.println(b); // Output: true
+}
+```
+
+* __`equalsIgnoreCase` method:__  iki String'i büyük harf-küçük harf farkını göz ardı ederek karşılaştırır.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "Galatasaray"; // G büyük
+  String takim2 = "galatasaray"; // g küçük
+  
+  boolean b1 = takim1.equals(takim2);
+  System.out.println(b1); // Output: false
+		
+  boolean b2 = takim1.equalsIgnoreCase(takim2);
+  System.out.println(b2); // Output: true
+}
+```
