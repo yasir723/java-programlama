@@ -426,11 +426,11 @@ static int showOptionDialog(Component parent, Object message, String title, int 
 - Karakter (char) değişkenleri için tek tırnak içinde belirtilir: ` ' ` ve Stringler için kullanılmaz.
 #### İki şekilde tanımlanabilir:
 ```java
-String st = "Sarı-Kırmızı, Ateş-Aslan";
+String st = "Sarı Kırmızı, Ateş ve Aslan";
 ```
 
 ```java
-String st = new String("Sarı-Kırmızı, Ateş-Aslan");
+String st = new String("Sarı Kırmızı, Ateş ve Aslan");
 ```
 
 **Önemli metotlar**
@@ -549,5 +549,18 @@ public static void main (String[] args)
   
   String takim3 = takim1.replace('a','A');
   System.out.println(takim3); // Output: gAlAtAsArAy
+}
+```
+
+
+* __`substring` method:__ bir String'in belirli bir aralığındaki karakterleri almak için kullanılır.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "Galatasaray"; 
+  
+  String subTakim = takim1.substring(3, 6); // 3 dahil, 6 dahil değil
+  
+  System.out.println(subTakim); // Output: ata
 }
 ```
