@@ -560,7 +560,7 @@ public static void main (String[] args)
   String takim = "Galatasaray";
   
   String subTakim1 = takim.substring(6); // 7. indexten sonuna kadar
-  System.out.println(subTakim1);
+  System.out.println(subTakim1); // saray
   
   String subTakim2 = takim.substring(3, 6); // 3 dahil, 6 dahil değil
   System.out.println(subTakim2); // Output: ata
