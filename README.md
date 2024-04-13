@@ -565,6 +565,8 @@ public static void main (String[] args)
 }
 ```
 
+
+
 * __`toLowerCase` method:__ bir String'in tüm harflerini küçük harfe dönüştürür.
 ```java
 public static void main (String[] args)
@@ -576,6 +578,8 @@ public static void main (String[] args)
   System.out.println(takim2); // Output: galatasaray
 }
 ```
+
+
 
 * __`toUpperCase` method:__ bir String'in tüm harflerini büyük harfe dönüştürür.
 ```java
