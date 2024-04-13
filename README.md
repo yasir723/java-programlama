@@ -434,7 +434,7 @@ String st = new String("Java is programming language");
 ```
 
 **Önemli metotlar**
-1. `new` method: yeni obje üretmek için kullanılır.
+* __`new` method:__ yeni obje üretmek için kullanılır.
 ```java
 public static void main (String[] args)
 {
@@ -442,7 +442,7 @@ public static void main (String[] args)
   String takim2 = new String(takim);
 }
 ```
-2. `charAt` method: bir karaktere ulaşmak için kullanılır. index'i integer olarak parametre alır.
+* __`charAt` method:__ bir karaktere ulaşmak için kullanılır. index'i integer olarak parametre alır.
 ```java
 public static void main (String[] args)
 {
@@ -452,5 +452,35 @@ public static void main (String[] args)
 }
 ```
 
+* __`compareTo` method:__ bir nesneyi diğerine göre sıralamak için kullanılır.
 
+Java karakter verisi Unicode karakter kümesine dayanır. Unicode, her karakter için belirli bir sayısal değer belirler ve bu nedenle bir sıralama sağlar. Bu sıralamaya dayanarak karakter verileri üzerinde ilişkisel operatörler kullanabiliriz
+| karaktter | Unicode| 
+| --------- | -------| 
+| 0 - 9    | 48 - 57| 
+| A - Z    | 65 - 90| 
+| a - z    | 97 - 122| 
 
+```java
+public static void main (String[] args)
+{
+int r;
+  String takim1 = "Galatasaray";
+  String takim2 = "Galatasaray";
+		
+  // iki string aynı ise 0 döndürür
+  r = takim1.compareTo(takim2); // 0 döndürür
+		
+  takim1 = "Galatasaray";
+  takim2 = "galatasaray";
+		
+  // Eğer parametre olan daha büyük Unicode'a sahipse, negatif bir değer döndürür
+  r = takim1.compareTo(takim2); // Negatif bir değer döndürür
+
+  takim1 = "galatasaray";
+  takim2 = "Galatasaray";
+		
+  // Eğer parametre olan daha küçük Unicode'a sahipse, pozitif bir değer döndürür
+  r = takim1.compareTo(takim2); // Pozitif bir değer döndürür		
+}
+```
