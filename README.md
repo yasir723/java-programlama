@@ -418,7 +418,17 @@ static int showOptionDialog(Component parent, Object message, String title, int 
 }
 ```
 
+---
+## 7. `String` Sınıfı
+- String bir değişken değildir, bir objedir
+#### İki şekilde tanımlanabilir:
+```java
+String st = "Java is programming language";
+```
 
+```java
+String st = new String("Java is programming language");
+```
 
 
 
