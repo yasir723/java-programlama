@@ -576,3 +576,15 @@ public static void main (String[] args)
   System.out.println(takim2); // Output: galatasaray
 }
 ```
+
+* __`toUpperCase` method:__ bir String'in tüm harflerini büyük harfe dönüştürür.
+```java
+public static void main (String[] args)
+{
+  String takim1 = "Galatasaray"; // sadece G büyük harfler
+  
+  String takim2 = takim1.toUpperCase();
+  
+  System.out.println(takim2); // Output: GALATASARAY
+}
+```
